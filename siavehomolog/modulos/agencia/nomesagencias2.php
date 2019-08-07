@@ -1,0 +1,13 @@
+<?php 
+$agencias = Array();
+$agencias["722"] = "AGÊNCIA REGIONAL DE ARARUNA";
+$agencias["005"] = "AGÊNCIA REGIONAL DE CAJAZEIRAS";
+$agencias["007"] = "AGÊNCIA REGIONAL DE CAMPINA GRANDE";
+$agencias["006"] = "AGÊNCIA REGIONAL DE GUARABIRA";
+$agencias["003"] = "AGÊNCIA REGIONAL DE JOÃO PESSOA";
+$agencias["008"] = "AGÊNCIA REGIONAL DE MONTEIRO";
+$agencias["001"] = "AGÊNCIA REGIONAL DE PATOS";
+$agencias["002"] = "AGÊNCIA REGIONAL DE POMBAL";
+$agencias["012"] = "AGÊNCIA REGIONAL DE ITAPORANGA";
+$agencias["004"] = "AGÊNCIA REGIONAL DE SOUSA";
+$agencias["014"] = "AGÊNCIA REGIONAL SUL";

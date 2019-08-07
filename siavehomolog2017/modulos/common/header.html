@@ -1,0 +1,65 @@
+<script>
+    $(function () {
+        $("#dialog").dialog({
+            autoOpen: false,
+            width: 500,
+            show: {
+                effect: "slide",
+                duration: 1000
+            },
+            hide: {
+                effect: "drop",
+                duration: 1000
+            }
+        });
+
+        $("#opener").on("click", function () {
+            $("#dialog").dialog("open");
+        });
+    });
+</script>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-2">
+                <a href="">
+                    <h1><img src="../../layout/images/logo.png" ></h1>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>SIAVE - Sistema de Acompanhamento das Avaliações dos Eventos</p>
+            </div>
+            <div class="col-xs-12 col-md-1" data-aos="zoom-in">
+                <div class="info">
+                    <a id="opener">
+                        <img src="../../layout/images/info.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dialog" title="Informações">
+        <p>
+            APLICABILIDADE<br>
+            Pergunta relacionada: O conte&uacute;do poder&aacute; ser aplicado na sua empresa ou na sua atividade <BR>profissional ?
+            <br><br>
+            SATISFA&Ccedil;&Atilde;O<br>
+            Pergunta relacionada: Voc&ecirc; classificaria sua satisfa&ccedil;&atilde;o com o evento do SEBRAE oferecido como:
+            <br><br>
+            INFRAESTRTURA<br>
+            Pergunta relacionada: A infra-instrutura foi adequada - espa&ccedil;o f&iacute;sico, recurso &aacute;udio-visual, 
+            ilumina&ccedil;&atilde;o, mobili&aacute;rio, etc ?
+            <br><br>
+            INSTRUTOR/FACILITADOR<br>
+            Pergunta relacionada: Conduziu os trabalhos de maneira a possibilitar o alcance dos objetivos da  
+            capacita&ccedil;&atilde;o ?
+            <br><br>
+            CONHECIMENTO<br>
+            Pergunta relacionada: Como tomou conhecimento deste evento? 
+            <br><br>
+            FIDELIZA&Ccedil;&Atilde;O<br>
+            Pergunta relacionada: Voc&ecirc; indicaria esta solu&ccedil;&atilde;o para um amigo? 
+        </p>
+    </div>
+</header>

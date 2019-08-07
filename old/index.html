@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+              content="Sistema de acompanhamento das avaliações dos eventos">
+        <title>SIAVE</title>
+
+        <link rel="stylesheet" href="jquery/jquery-ui.css" />
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/layouts/side-menu.css">
+        <link rel="stylesheet" href="css/estilFos.css">
+        <link rel="stylesheet" href="css/pure-min.css">
+
+        <script src="jquery/jquery-1.8.2.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/bootbox.min.js"></script>
+        <script src="js/ui.js"></script>
+        <script src="js/scripts.js"></script>
+    </head>
+    <body>
+        <div id="layout">
+            <!-- Menu toggle -->
+            <a href="#menu" id="menuLink" class="menu-link"> <!-- Hamburger icon -->
+                <span></span>
+            </a>
+            <div id="menu">
+                <table width="100%" border="0" bgcolor="#fff">
+                    <tr>
+                        <td><a href="#"><img src="images/logosebrae.png"></a></td>
+                    </tr>
+                </table>
+                <ul>
+                    <li><label onclick="javascript:carrega('estado');">ESTADO </label></li>
+                    <li><label onclick="javascript:carrega('agencias');"> AGÊNCIAS </label></li>
+                    <li><label onclick="javascript:carrega('eventos');"> EVENTOS </label></li>
+                </ul>
+            </div>
+            <div id="main">
+                <div class="header">
+                    <table width="100%">
+                        <tr>
+                            <td width="90%"><label class="siave">SIAVE</label> <label
+                                    class="siavedescricao">Sistema de acompanhamento das
+                                    avaliações dos eventos</label></td>
+                            <td width="10%" align="center"><img src="images/info.png"
+                                                                width="45" height="45" onclick="javascript:showindicador();"
+                                                                class="pointerimg"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="content" id="content"></div>
+            </div>
+        </div>
+    </body>
+</html>
